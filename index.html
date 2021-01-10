@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Labirent Çözümü</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <textarea id="txtKaynak" cols="30" rows="20" wrap="off">
+00000000010
+01010111110
+01010000010
+11011101110
+00000100000
+11010101011
+00010101000
+01010101110
+01010100010
+11010101110
+00010100010</textarea>
+                <div>
+                    <button onclick="labirentCiz()">Labirent Çiz</button>
+                    <button onclick="labirentCoz()">Labirent Çöz</button>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <label for="cikmazGoster">
+                        <input type="checkbox" id="chkCikmazGoster"> Denenen çıkmaz yolları göster
+                    </label>
+                </div>
+                <div>
+                    <canvas id="canvas" width="440" height="440"></canvas>
+                </div>
+                <div>
+                    <div class="animHizContainer">
+                        Animasyon Hızı (fps): <input type="range" id="rangeHiz" min="1" max="1000" value="10">
+                    </div>
+                    <button id="btnAnimasyon">Gezinme Animasyonunu Başlat</button>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+<!--
+    http://csharphelper.com/blog/2016/11/make-draw-maze-c/
+    https://www.w3schools.com/html/html5_canvas.asp
+    https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
+-->

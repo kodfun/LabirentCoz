@@ -1,0 +1,21 @@
+.row {
+    display: flex;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+#txtKaynak {
+    min-width: 90%;
+    letter-spacing: 10px;
+    font-size: 2rem;
+}
+
+#canvas {
+    border: 3px solid black;
+}
+
+.animHizContainer {
+    padding: .5rem 0;
+}
